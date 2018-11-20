@@ -1,0 +1,15 @@
+
+
+ <table border ="1">
+ <table>
+ 	<tr>
+ 		<td>Email</td>
+ 		<td>Password</td>
+ 	</tr>
+ <% @users.each do |user| %>
+ 	<tr>
+ 		<td><%=user.email %></td>
+ 		<td><%=user.password %></td>	
+ 	</tr>
+ <% end %>
+ </table>
