@@ -1,0 +1,19 @@
+<h2>login</h2>
+<%= form_with(url: 'perform_login') do |f|%>
+
+	<table border='1'>
+		<tr>
+			<td>email</td>
+			<td><%= f.text_field(:email)%></td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td><%= f.text_field :password %></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><%=f.submit %></td>
+		</tr>
+	</table>
+
+<% end %>
