@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_20_172355) do
+ActiveRecord::Schema.define(version: 2018_11_26_204039) do
+
+  create_table "houses", force: :cascade do |t|
+    t.string "houses"
+    t.string "property_type"
+    t.decimal "price"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "zip"
+    t.text "description"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email"

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'users/list'
 
+  get 'houses/search'
+  get 'houses/result', to: 'houses#result'
+  
+  get 'users/list'
   get 'registration', to: 'users#registration'
   post 'registation/create', to: 'users#create'
 
@@ -12,4 +15,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   get 'sign-up', to: 'users#sign_up'
+
+
+  resources :houses
 end
