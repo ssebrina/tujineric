@@ -1,0 +1,29 @@
+<h1>result</h1>
+<style>
+	.kk {
+		border-color: red;
+	}
+</style>
+
+<table class = 'kk' border="1">
+ 	<tr>
+ 		<td>property</td>
+ 		<td>price</td>
+ 		<td>address</td>
+ 		<td>city</td>
+ 		<td>state</td>
+ 		<td>zipcode</td>
+ 		<td>description</td>
+ 	</tr>
+	 <% @houses.each do |house| %>
+	 	<tr>
+	 		<td><%=house.property_type %></td>
+	 		<td><%=house.price %></td>	
+	 		<td><%=house.address %></td>	
+	 		<td><%=house.city %></td>	
+	 		<td><%=house.state %></td>	
+	 		<td><%=house.zip %></td>	
+	 		<td><%=house.description %></td>	
+	 	</tr>
+	 <% end %>
+ </table>

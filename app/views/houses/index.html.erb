@@ -1,0 +1,30 @@
+<style> 
+.ll {
+	border-color: red;
+}
+</style>
+<table  class= 'll' border="1">
+ 	<tr>
+ 		<td>id</td>
+ 		<td>property</td>
+ 		<td>price</td>
+ 		<td>address</td>
+ 		<td>city</td>
+ 		<td>state</td>
+ 		<td>zipcode</td>
+ 		<td>desc</td>
+ 	</tr>
+	 <% @houses.each do |house| %>
+	 	<tr>
+	 		<!-- <td><a href="/houses/<%=house.id %>"><%=house.id %></a></td> -->
+	 		<td><%= link_to(house.id, house_url(house.id)) %></td>
+	 		<td><%=house.property_type %></td>
+	 		<td><%=house.price %></td>	
+	 		<td><%=house.address %></td>	
+	 		<td><%=house.city %></td>	
+	 		<td><%=house.state %></td>	
+	 		<td><%=house.zip %></td>	
+	 		<td><%=house.description %></td>	
+	 	</tr>
+	 <% end %>
+ </table>

@@ -1,0 +1,45 @@
+<h1>Houses#new</h1>
+</style>
+
+<%= form_with(url: houses_url) do |f|%>
+
+	<table border='1'>
+		<tr>
+			<td>property</td>
+			<td><%= f.text_field(:property_type)%></td>
+		</tr>
+
+		<tr>
+			<td>description</td>
+			<td><%= f.text_area :description%></td>
+		</tr>
+
+		<tr>
+			<td>price</td>
+			<td><%= f.text_field :price %></td>
+		</tr>
+		<tr>
+			<td>address</td>
+			<td><%= f.text_field :address %></td>
+		</tr>
+		<tr>
+			<td>city</td>
+			<td><%= f.text_field :city %></td>
+		</tr>
+		<tr>
+			<td>state</td>
+			<td><%= f.text_field :state %></td>
+		</tr>
+		<tr>
+			<td>zip code</td>
+			<td><%= f.text_field :zip%></td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td><%=f.submit %></td>
+		</tr>
+	</table>
+
+<% end %>
+

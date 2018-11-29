@@ -8,14 +8,11 @@ class UsersController < ApplicationController
   end
 
   def create
-  	
-  	puts params[:email]
-  	puts params[:password]
 
-  	u = User.new
-  	u.email = params[:email]
-  	u.password = params[:password]
-  	u.save
+  	u = Users.new
+    u.email = params[:email]
+    u.password = params[:password]
+    u.save
 
   	redirect_to '/users/list'
   end
