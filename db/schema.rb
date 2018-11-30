@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_26_204039) do
+ActiveRecord::Schema.define(version: 2018_11_30_173458) do
 
   create_table "houses", force: :cascade do |t|
     t.string "houses"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_11_26_204039) do
     t.string "state"
     t.string "zip"
     t.text "description"
+    t.string "photo_url"
   end
 
   create_table "users", force: :cascade do |t|
